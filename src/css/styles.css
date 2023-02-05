@@ -1,0 +1,54 @@
+@import "./reset.css";
+
+@import "./login.css";
+@import "./background.css";
+@import "./clock.css";
+@import "./todo.css";
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+header,
+footer {
+  height: 15%;
+}
+
+main {
+  height: 70%;
+  position: relative;
+}
+
+header,
+footer,
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes OpacityZeroToOneAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
